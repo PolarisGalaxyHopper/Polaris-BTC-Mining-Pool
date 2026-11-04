@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polaris-pool-client"
+version = "0.1.0"
+description = "Polaris Pool — a sovereign Bitcoin pool — connect your miners through Tor and watch them from your own terminal"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+polaris-pool = "polaris_pool_terminal:main"
+
+[tool.setuptools]
+py-modules = ["polaris_pool_terminal"]
