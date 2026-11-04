@@ -1,6 +1,6 @@
 # Polaris Pool — Connect Guide
 
-Published 2026-11-03. This page is served by the Polaris Pool Tor door at `/pool/guide`; the machine-readable summary is at `/pool`. One file, updated in place.
+Published 2026-11-03. This page is served by the Polaris Pool Tor door at `/pool/guide`; the machine-readable summary is at `/pool`. The client kit (terminal, proxy installer, verifier, entrance script) is at https://github.com/PolarisGalaxyHopper/Polaris-BTC-Mining-Pool. One file, updated in place.
 
 ## What this pool is
 
@@ -34,7 +34,7 @@ Anything that speaks the stratum protocol: an ASIC, a GPU miner, a CPU miner. Th
 | GPU | ≈ 1 GH/s | ≈ 4 seconds | about ten thousand times less than one S9, for more electricity |
 | CPU | 1–3 MH/s per core | ≈ 20–40 minutes | proves the pipeline, earns nothing meaningful |
 
-Minimum share difficulty is 1. The terminal shows every connected machine the pool's share of the network and the honest expected time to a block, so decide with that number in front of you.
+Minimum share difficulty is 1; new connections start at difficulty 42 and the pool adjusts from there. A CPU or GPU miner that wants a lower start sends `mining.suggest_difficulty` after its authorize reply (the pool ignores it when it arrives earlier, and ignores `d=` in the password). Always work on the latest job the pool sends; a share for a retired job is answered `Invalid JobID`. The terminal shows every connected machine the pool's share of the network and the honest expected time to a block, so decide with that number in front of you.
 
 ## How to connect
 
