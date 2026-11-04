@@ -21,7 +21,8 @@ Anything that speaks stratum: ASIC, GPU or CPU. Shares are credited by difficult
 
 **Option A, the proxy box (Linux / Raspberry Pi, recommended for ASICs)**
 ```
-git clone <this repository> && cd POLARIS_POOL_CLIENT_KIT
+git clone https://github.com/PolarisGalaxyHopper/Polaris-BTC-Mining-Pool.git
+cd Polaris-BTC-Mining-Pool
 sudo bash install.sh        # installs Tor + the LAN proxy service + the terminal; asks for your payout address
 polaris-pool                  # the terminal (press 1 for Setup)
 ```
