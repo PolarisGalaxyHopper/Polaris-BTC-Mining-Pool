@@ -1,7 +1,6 @@
-[README.md](https://github.com/user-attachments/files/34354184/README.md)
 # Polaris-BTC-Mining-Pool
-Public interface and proxy tools for Polaris BTC Miner. Zero-exposure Tor routing, local LAN forwarders, and direct Stratum connectivity for home hardware and ASIC rigs.
-# Polaris Pool Client
+
+Public interface and proxy tools for the Polaris BTC mining pool: zero-exposure Tor routing, local LAN forwarders and direct stratum connectivity for home hardware and ASIC rigs.
 
 Connect your miners to the **Polaris Pool — a sovereign Bitcoin pool** and watch them from your own computer. No account, no browser, no personal data. The pool is reached only through Tor; everything here runs on your side.
 
@@ -53,6 +52,8 @@ Then in each miner: URL `stratum+tcp://<proxy LAN address>:3333`, worker `<your 
 | `relay_setup.sh` | public entrance host script |
 | `docs/CONNECT_GUIDE.md` | the guide |
 | `pyproject.toml` | `pip install .` → the `polaris-pool` command |
+
+Repository: https://github.com/PolarisGalaxyHopper/Polaris-BTC-Mining-Pool
 
 ## Licence
 
